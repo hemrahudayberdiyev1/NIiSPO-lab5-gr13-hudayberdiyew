@@ -1,0 +1,9 @@
+cd "/mnt/c/Users/hemra/Niicpo lab/lab 5/NIiSPO-lab5-gr13-hudayberdiyew"
+cp -r ~/lab5-terraform ./task1_terraform
+
+cat << 'EOF' > .gitignore
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+EOF

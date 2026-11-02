@@ -1,0 +1,11 @@
+---
+- name: Install essential packages on servers
+  hosts: servers
+  tasks:
+    - name: Update repository cache and install packages
+      apk:
+        name:
+          - curl
+          - nano
+        state: present
+        update_cache: yes
